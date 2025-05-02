@@ -1,5 +1,7 @@
 package org.mirashitech;
 
+import org.mirashitech.stream.TaxService;
+
 public class Main {
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
@@ -28,7 +30,8 @@ public class Main {
 //            t = t+ 1;
 //            System.out.println("processing and printing : " + t);
 //        });
-
+        TaxService ts = new TaxService();
+        System.out.println(ts.evaluateTaxableEmps("taxable"));
 
     }
 }
